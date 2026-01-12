@@ -1,0 +1,39 @@
+# 关键词替换插件配置 - 作者：hacker_liao
+# 规则配置格式:
+# rules:
+#   规则ID:
+#     trigger: "需要替换的关键词"
+#     replace: "替换后的词"
+#     groups: [玩家组列表]
+#     players: [特定玩家列表]
+#     enabled: true/false
+#     case_sensitive: false  # 是否区分大小写
+#     whole_word: false      # 是否全词匹配
+
+rules:
+  主人规则:
+    trigger: "hacker_liao"
+    replace: "主人sama~"
+    groups: ["all"]
+    players: []
+    enabled: true
+    case_sensitive: false
+    whole_word: false
+
+  all组测试规则:
+    trigger: "测试"
+    replace: "已替换"
+    groups: ["all"]
+    players: []
+    enabled: true
+    case_sensitive: false
+    whole_word: true
+
+# 插件设置
+settings:
+  # 是否在控制台显示替换日志
+  log_replacements: true
+  # 替换前是否通知玩家
+  notify_player: false
+  # 最大规则数量
+  max_rules: 50

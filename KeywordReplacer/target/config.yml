@@ -1,0 +1,193 @@
+name: KeywordReplacer
+version: 1.0.0
+main: com.example.keywordreplacer.KeywordReplacerPlugin
+api-version: 1.13
+depend:
+- LuckPerms
+author: hacker_liao
+description: 聊天关键词替换插件，支持LuckPerms玩家组检测
+
+commands:
+  keywordreplacer:
+    description: 关键词替换插件主命令
+    usage: /<command> [help|reload|list|add]
+    aliases:
+    - kr
+    - keyword
+
+permissions:
+  keywordreplacer:
+    '*':
+      description: 给予所有关键词替换插件权限
+      children:
+        keywordreplacer:
+          reload: true
+          list: true
+          add: true
+    reload:
+      description: 允许重载插件配置
+      default: op
+    list:
+      description: 允许列出所有规则
+      default: op
+    add:
+      description: 允许添加新规则
+      default: op
+rules:
+  orca1:
+    trigger: 拂晓
+    replace: 主人
+    groups:
+    - fuxiaogirl
+
+    enabled: true
+    case_sensitive: false
+    whole_word: false
+  orca2:
+    trigger: 猴子
+    replace: 主人
+    groups:
+    - fuxiaogirl
+
+    enabled: true
+    case_sensitive: false
+    whole_word: false
+  orca3:
+    trigger: 王若华
+    replace: 主人
+    groups:
+    - fuxiaogirl
+
+    enabled: true
+    case_sensitive: false
+    whole_word: false
+  orca4:
+    trigger: jeremy
+    replace: 主人
+    groups:
+    - fuxiaogirl
+
+    enabled: true
+    case_sensitive: false
+    whole_word: false
+  fuzhu1:
+    trigger: hacker
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+
+  fuzhu2:
+    trigger: heikeliao
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu3:
+    trigger: hacker_liao
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu4:
+    trigger: yewen
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu5:
+    trigger: ye wen
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu6:
+    trigger: 叶问
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu7:
+    trigger: 腐竹
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu8:
+    trigger: 黑客
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu9:
+    trigger: 黑客廖
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	
+  fuzhu10:
+    trigger: 黑客了
+    replace: 主人sama~
+    groups:
+    - default
+    - all
+    - fuxiaogirl
+    - femboy
+    - admin
+    enabled: true
+    case_sensitive: false
+    whole_word: false	

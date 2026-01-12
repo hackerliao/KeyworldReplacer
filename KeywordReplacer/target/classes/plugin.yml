@@ -1,0 +1,38 @@
+name: KeywordReplacer
+version: 1.0.0
+main: com.hacker_liao.keywordreplacer.KeywordReplacerPlugin
+api-version: 1.13
+depend: [LuckPerms]
+author: hacker_liao
+description: 聊天关键词替换插件，支持LuckPerms玩家组检测
+
+commands:
+  keywordreplacer:
+    description: 关键词替换插件主命令
+    usage: /<command> [help|reload|list|add|remove|toggle]
+    aliases: [kr]
+
+permissions:
+  keywordreplacer.*:
+    description: 给予所有关键词替换插件权限
+    children:
+      keywordreplacer.reload: true
+      keywordreplacer.list: true
+      keywordreplacer.add: true
+      keywordreplacer.remove: true
+      keywordreplacer.toggle: true
+  keywordreplacer.reload:
+    description: 允许重载插件配置
+    default: op
+  keywordreplacer.list:
+    description: 允许列出所有规则
+    default: op
+  keywordreplacer.add:
+    description: 允许添加新规则
+    default: op
+  keywordreplacer.remove:
+    description: 允许删除规则
+    default: op
+  keywordreplacer.toggle:
+    description: 允许启用/禁用规则
+    default: op

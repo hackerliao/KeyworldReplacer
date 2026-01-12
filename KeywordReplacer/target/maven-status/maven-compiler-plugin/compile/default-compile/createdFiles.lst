@@ -1,0 +1,6 @@
+com\hacker_liao\keywordreplacer\ChatListener.class
+com\hacker_liao\keywordreplacer\CommandHandler.class
+com\hacker_liao\keywordreplacer\TabCompletion.class
+com\hacker_liao\keywordreplacer\ConfigManager.class
+com\hacker_liao\keywordreplacer\KeywordReplacerPlugin.class
+com\hacker_liao\keywordreplacer\ReplacementRule.class
